@@ -1,7 +1,7 @@
 <template>
     <div class="homepage">
         <div class="login" @click="clicklogin"><p>{{  login  }}</p></div>
-        <div class="start" @click="clickstart"><router-link to="./heise"><p>{{  start  }}</p></router-link></div>        
+        <div class="start" @click="clickstart"><p>{{  start  }}</p></div>        
     </div>
     <router-view></router-view>
 </template>
@@ -18,6 +18,9 @@
         methods:{
             clicklogin(){
             this.$router.push('/Tabs');
+        },
+        clickstart(){
+             this.$router.push('/Tabs');
         }
         }
 
